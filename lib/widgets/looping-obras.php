@@ -1,4 +1,4 @@
-<?php $arguments = array('category_name' => 'empreendimentos', 'order'=>'ASC'); $recent = new WP_Query( $arguments ); ?>
+<?php $arguments = array('category_name' => 'empreendimentos', 'showposts' => 7, 'orderby' => 'date', 'order'=>'DESC'); $recent = new WP_Query( $arguments ); ?>
 
 <?php if ( $recent->have_posts() ) : ?>
 <?php while( $recent->have_posts() ): $recent->the_post(); ?>
